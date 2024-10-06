@@ -1,0 +1,43 @@
+REQUISITO | Ter o "NodeJS" instalado.
+
+Antes de tudo instale o yarn primeiro, veja algum post no google, ou digite :
+
+npm install -g yarn
+
+Para instalar todas as bibliotecas do projeto
+
+yarn
+
+Para criar o banco de dados
+
+yarn prisma migrate dev --name create_tables
+
+Para rodar o projeto em Localhost
+
+yarn dev
+
+#####################################################
+
+Usando a API
+
+Para registrar um novo usuário :
+
+Rota : http://localhost:5000/users
+Dados : 
+
+        {
+            "nome_completo": "Miraldino Dória",
+            "email": "miraldino22@gmail.com",
+            "contacto": "999999-9999",
+            "senha": "123456"
+        }
+
+Para fazer login no sistema :
+
+Rota : http://localhost:5000/auth
+Dados :
+
+        {
+            "email": "miraldino@gmail.com",
+            "senha": "123456"
+        }
